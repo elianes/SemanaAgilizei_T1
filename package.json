@@ -1,0 +1,25 @@
+{
+  "name": "semana-agilizei T1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "nox cypress run",
+    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
+    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chance": "^1.1.7",
+    "cypress": "^4.10.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-file-upload": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions": true
+  }
+}
