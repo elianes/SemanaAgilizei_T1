@@ -1,2 +1,12 @@
 node_modules
-vs.code-workspace
+vs.*
+
+mochawesome-report
+
+cypress/reports/cucumber-json/**
+cypress/reports/index.html
+cypress/reports/index.html.json
+
+cypress/videos
+
+

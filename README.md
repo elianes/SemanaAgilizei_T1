@@ -29,3 +29,34 @@
     Gherkin (Behat) – Documentação
     Imagem do início, explicando BDD – Imagem
     Plugin do Cypress para integrar com o Cucumber – Link
+
+- Dia 4:
+    Relatorios com Mochawesome
+
+    - mocha -> lib de execução de testes
+    - mochawesome -> formato de relatório nativo do cypress
+    - mochawesome-report-generator -> gerar um relatório baseado em um .json
+        - problema -> um arquivo .json para cada spec.
+    - mochawesome-merge -> unifica o resultado de varios .json em um arquivo único
+    - cypress-multi-reporters -> permite o uso de multiplos tipos de relatório so final da execução. 
+
+Execução:
+    >> npm run cy:run
+    >> npm run report:merge
+    >> npm run report:mocha
+    >> npm run report:clean
+
+    Relatórios com Cucumber HTML Reports
+
+    - cucumber-html-reporter -> gera um relatorio html baseado nos arquivos. 
+
+    >> npm run cy:run:cucumber
+    >> node cypress/reports/reporter.js
+
+    Links adicionais:
+
+    Cucumber Reports – Documentação
+    Mochawesome Reports – Documentação
+    Código do reporter.js criado, para conferir – Gist
+
+DIA 5: 
