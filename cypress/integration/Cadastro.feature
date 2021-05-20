@@ -7,9 +7,10 @@ Funcionalidade: Cadastro
 
         Cenario: Cadastro de novo usuário
             Dado que acesso o site
-             Quando informar meus dados
-              E salvar
-             Entao deve ser cadastrado com sucesso
+            Quando informar meus dados
+            E salvar
+            Entao deve ser cadastrado com sucesso
+
 
 # Given / Dado -> contexto
 # When / Quando -> ação executada
